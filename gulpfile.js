@@ -33,6 +33,8 @@ gulp.task('js', function () {
         'app/js/jquery.min.js',
         'app/js/classes/Battleground.js',
         'app/js/classes/Player.js',
+        'app/js/classes/AIPlayer.js',
+        'app/js/classes/HumanPlayer.js',        
         'app/js/classes/GameController.js',
         'app/js/common.js'
     ])
