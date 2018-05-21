@@ -1,0 +1,106 @@
+
+.title
+  text-align: center
+  font-size: 42px
+.name-input-container
+  text-align: center
+  .name-label
+    font-size: 20px
+  #name-input
+    margin: 20px 0
+    padding: 5px
+    font-size: 20px
+  #name-button
+    padding: 5px
+    font-size: 20px
+
+.battlerground-wrapper
+  position: relative
+  float: left
+  margin: 0 20px 20px 0
+  td
+    box-sizing: border-box
+    width: 32px
+    height: 32px
+    background-color: #fff
+    color: red
+    font-size: 10px
+    text-align: center
+    border: 1px solid green
+    border-radius: 2px
+  .battleground
+    position: absolute
+    top: 35px
+    left: 34px
+    td
+      min-width: 32px
+      min-height: 32px
+      background-color: blue
+      color: red
+      font-size: 10px
+      text-align: center
+      border: none
+      &.ship
+        background-color: yellow
+      &.unknow
+        background-color: grey
+        &:hover
+          background-color: #fff  
+          cursor: pointer
+
+// #battleground2
+  
+
+#battleground1, #battleground2 
+  float: left
+  width: 40%
+  .miss
+    background-color: blue
+    position: relative
+    &:before
+      content: '\26AC'
+      color: red
+      width: 100%
+      height: 100%
+      position: absolute
+      text-align: center
+      font-size: 30px
+      bottom: 6px
+      left: 0
+  .hit 
+    background-color: yellow
+    position: relative
+    &:before
+      content: '\2694'
+      color: red
+      width: 100%
+      height: 100%
+      position: absolute
+      text-align: center
+      font-size: 32px
+      bottom: 9px
+      left: 0
+
+#log
+  margin: 20px
+  clear: both
+  line-height: 4px
+  overflow-y: scroll
+  max-height: 500px
+  height: 200px
+  position: relative
+  @media ('max-width: 800px')
+    clear: none
+    margin: 10px
+    height: 500px
+    margin-top: 100px
+    line-height: 15px
+
+.victory
+  text-align: center
+  p
+    font-size: 42px
+.nice
+  color: green
+.sad
+  color: red
